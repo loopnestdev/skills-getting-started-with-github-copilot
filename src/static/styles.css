@@ -89,8 +89,9 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  margin: 8px 0 0 20px;
-  list-style: disc;
+  margin: 8px 0 0;
+  padding-left: 0;
+  list-style: none;
   color: #444;
   max-height: 150px;
   overflow: auto;
@@ -98,6 +99,32 @@ section h3 {
 
 .activity-card .participants-list li {
   padding: 2px 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+  padding: 2px 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
 }
 
 .activity-card .participants-empty {
